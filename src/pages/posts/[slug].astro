@@ -100,8 +100,14 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
   ogImage={ogImage}
 >
   <div slot="main" class={styles.main}>
+    <div class="navorigin">
+      <a href="../../../posts/tag/Works/" class="nava">ALL WORKs</a>
+      <a href="../../../posts/cv" class="nava">CV</a>
+      <a href="../../../posts/exhibition" class="nava">EXHIBITION</a>
+      <a href="../../../posts/contact" class="nava">CONTACT</a>
+      </div>
     <div class={styles.post}>
-      <PostDate post={post} />
+      <!-- <PostDate post={post} /> -->
       <PostTags post={post} />
       <PostTitle post={post} enableLink={false} />
       <PostBody blocks={blocks} />
@@ -123,5 +129,10 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
     <BlogPostsLink heading="Recommended" posts={rankedPosts} />
     <BlogPostsLink heading="Latest posts" posts={recentPosts} />
     <BlogTagsLink heading="Categories" tags={tags} />
+    <div class="navaside">
+      <a href="../../../posts/cv" class="nava">CV</a>
+      <a href="../../../posts/exhibition" class="nava">EXHIBITION</a>
+      <a href="../../../posts/contact" class="nava">CONTACT</a>
+      </div>
   </div>
 </Layout>

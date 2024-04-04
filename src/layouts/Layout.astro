@@ -437,4 +437,42 @@ if (database.Icon && database.Icon.Type === 'file') {
     display: inline-block;
     min-height: 0.9rem;
   }
+  div.navorigin {
+      display: block;
+      width: 400px;
+      margin-top: 20px;
+    }
+    @media (min-width: 640px) {
+      div.navorigin {
+      display: none;
+    }
+  }
+  div.navaside {
+      display: block;
+      width: 400px;
+      margin-top: 20px;
+    }
+    @media (max-width: 640px) {
+      div.navaside {
+      display: none;
+    }
+  }
+  a.nava {
+    min-width: 0;
+    border-radius: 3px;
+    padding: 2px 6px;
+    line-height: 1.2;
+    color: rgb(50, 48, 44);
+    list-style-type: none;
+    margin-block-end: 1rem;
+    margin-left: 0.4rem;
+    color: #222;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    background: rgb(255, 38, 0) !important;
+    position: relative;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    }
 </style>
