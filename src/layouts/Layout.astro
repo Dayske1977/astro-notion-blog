@@ -74,6 +74,7 @@ if (database.Icon && database.Icon.Type === 'file') {
       integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0"
       crossorigin="anonymous"
     />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
     <GoogleAnalytics trackingId={PUBLIC_GA_TRACKING_ID} />
@@ -129,7 +130,11 @@ if (database.Icon && database.Icon.Type === 'file') {
 
             <footer>
               <div>
-                <span>Powered by&nbsp;</span>
+                <div style="margin-bottom: 10px;">
+                  <span style="background-color: white; height:34px; margin: 5px;"><a href="https://www.facebook.com/funaki.daisuke" target="_blank"><i class="fa fa-facebook-square fa-2x" style="color:#707070;"></i></a></span>
+                  <span style="background-color: white; height:34px; margin: 5px;"><a href="https://www.instagram.com/daisuke_funaki/" target="_blank"><i class="fa fa-instagram fa-2x" style="color:#707070;"></i></a></span>
+                </div>
+                <span>&copy;2008-2024 FUNAKI Daisuke.<br />FUNAKI Daisuke ART works is Powered by&nbsp;</span>
                 <a href="https://github.com/otoyo/astro-notion-blog"
                   >astro-notion-blog</a
                 >
@@ -470,7 +475,7 @@ if (database.Icon && database.Icon.Type === 'file') {
     font-weight: 400;
     font-size: 0.9rem;
     line-height: 1.8rem;
-    background: rgb(255, 38, 0) !important;
+    background: rgb(181 230 241) !important;
     position: relative;
     line-height: 1.2rem;
     font-size: 0.9rem;
