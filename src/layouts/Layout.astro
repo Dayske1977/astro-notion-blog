@@ -172,6 +172,7 @@ if (database.Icon && database.Icon.Type === 'file') {
       display: block;
       max-width: 1280px;
       margin: 0 auto;
+      width: 80%;
     }
   }
   .container > div {
@@ -342,6 +343,11 @@ if (database.Icon && database.Icon.Type === 'file') {
 
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
+  }
+  @media (max-width: 640px) {
+    body {
+      width: 90%;
+    }
   }
   @media (max-width: 640px) {
     h1 {
