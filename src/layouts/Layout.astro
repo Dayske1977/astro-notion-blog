@@ -167,6 +167,11 @@ if (database.Icon && database.Icon.Type === 'file') {
   .container {
     min-height: 100vh;
   }
+  @media (max-width: 640px) {
+    .container {
+      display: block;
+    }
+  }
   .container > div {
     display: flex;
     max-width: 1280px;
@@ -335,6 +340,11 @@ if (database.Icon && database.Icon.Type === 'file') {
 
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
+  }
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 1.6rem;
+    }
   }
   figure {
     margin: 0;
