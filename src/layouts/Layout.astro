@@ -162,7 +162,12 @@ if (database.Icon && database.Icon.Type === 'file') {
 <style>
   *{outline: 2px solid red;}
   .container {
-    min-height: 100%;
+    min-height: 100vh;
+  }
+  @media (max-width: 640px) {
+    .container {
+    width: 95% ;
+  }
   }
 
   .container > div {
