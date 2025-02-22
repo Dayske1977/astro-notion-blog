@@ -13,9 +13,5 @@ const blocks = await getAllBlocksByBlockId(INDEX_PAGE_ID)
       <NotionBlocks blocks={blocks} isRoot={true} />
     </div>
   
-    <script>
-        var styleElm = document.createElement('style');
-        styleElm.innerText = 'aside { display: none; }';
-        document.getElementsByTagName('head').item(0).appendChild(styleElm);
-    </script>
+    
   </Layout>
