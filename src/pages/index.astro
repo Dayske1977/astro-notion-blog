@@ -1,7 +1,7 @@
 ---
 import { INDEX_PAGE_ID } from '../server-constants.ts'
 import { getAllBlocksByBlockId } from '../lib/notion/client.ts'
-import Layout from '../layouts/Layout.astro'
+import Layout from '../layouts/Layout2.astro'
 import NotionBlocks from '../components/NotionBlocks.astro'
 
 
@@ -15,18 +15,3 @@ const blocks = await getAllBlocksByBlockId(INDEX_PAGE_ID)
   
    <div slot="aside"></div>
   </Layout>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  // 指定のURLの場合にだけ実行
-  if (window.location.href === "https://funakidaisuke.work/") {
-      let aside = document.querySelector("aside");
-      if (aside) {
-          aside.style.display = "none";
-      }
-  }
-});
-      /* var styleElm = document.createElement('style');
-      styleElm.innerText = 'aside { display: none; }';
-      document.getElementsByTagName('head').item(0).appendChild(styleElm); */
-  </script>
