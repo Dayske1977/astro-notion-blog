@@ -79,6 +79,17 @@ if (database.Icon && database.Icon.Type === 'file') {
     <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
     <link rel="manifest" href="/manifest.webmanifest">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // トップページ（ルートURL）だけ適用
+    if (window.location.pathname === "/") {
+        let aside = document.querySelector("aside");
+        if (aside) {
+            aside.style.display = "none";
+        }
+    }
+});
+    </script>
   </head>
   <body>
     <GoogleAnalytics trackingId={PUBLIC_GA_TRACKING_ID} />
